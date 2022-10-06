@@ -21,14 +21,12 @@ console.log(userAge);
 
 let wholePrice = (NumberKm * 0.21);
 wholePrice = wholePrice.toFixed(2);
-const messageWholePrice = ('il prezzo intero del treno è: ' + wholePrice + '€')
-console.log(messageWholePrice);
+console.log('il prezzo intero del treno è: ' + wholePrice + '€');
 //fare sconto del 20 % per i minorenni e del 40% per gli over 65 utilizzndo if
 
 if (userAge<18) {
     const teenDiscount = (wholePrice * 0.20);
-    const MessageTeenDiscount = ('lo sconto che possiamo applicare per te è di: ' + teenDiscount + '€');
-    console.log(MessageTeenDiscount);
+    console.log('lo sconto che possiamo applicare per te è di: ' + teenDiscount + '€');
     let finalPriceTeen = (wholePrice - teenDiscount);
     finalPriceTeen = finalPriceTeen.toFixed(2);
     const MessagePriceTeen = ('il prezzo del biglietto con lo sconto applicato è: ' + finalPriceTeen + '€')
@@ -36,10 +34,11 @@ if (userAge<18) {
     
 } else if (userAge>65){
     const overDiscount = (wholePrice * 0.40);
-    const MessageOverDiscount = ('lo sconto che possiamo applicare per te è di: ' + overDiscount + '€');
-    console.log(MessageOverDiscount);
+    console.log('lo sconto che possiamo applicare per te è di: ' + overDiscount + '€');
     let finalOldPrice = (wholePrice - overDiscount);
     finalOldPrice = finalOldPrice.toFixed(2);
-    const MessageOldPrice = ('il prezzo del biglietto con lo sconto applicato è: ' + finalOldPrice + '€')
-    console.log(MessageOldPrice);
+    console.log('il prezzo del biglietto con lo sconto applicato è: ' + finalOldPrice + '€');
+} else {
+    console.log ('non puoi avere nessuno sconto')
+
 }
