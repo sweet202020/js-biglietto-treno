@@ -29,8 +29,7 @@ if (userAge<18) {
     console.log('lo sconto che possiamo applicare per te è di: ' + teenDiscount + '€');
     let finalPriceTeen = (wholePrice - teenDiscount);
     finalPriceTeen = finalPriceTeen.toFixed(2);
-    const MessagePriceTeen = ('il prezzo del biglietto con lo sconto applicato è: ' + finalPriceTeen + '€')
-    console.log(MessagePriceTeen);
+    console.log('il prezzo del biglietto con lo sconto applicato è: ' + finalPriceTeen + '€');
     
 } else if (userAge>65){
     const overDiscount = (wholePrice * 0.40);
